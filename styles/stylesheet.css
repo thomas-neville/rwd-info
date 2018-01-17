@@ -2,3 +2,22 @@
   font-family: sans-serif;
 }
 
+label {
+  float:left;
+}
+
+label::after {
+  clear:both;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
+input[type=email] {
+  background-color: lightgray;
+}
