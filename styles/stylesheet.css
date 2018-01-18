@@ -2,8 +2,27 @@
   font-family: sans-serif;
 }
 
+p {
+  margin: 1rem 2rem;
+}
+
+h1, h2 {
+  color: royalblue;
+}
+
+h1 {
+  margin-left: 1rem;
+}
+
+.form-area {
+  background-color: #f2f2f2;
+  padding: .5rem 1rem;
+}
+
 label {
-  float:left;
+  width: 99%;
+  margin-left: 1rem;
+  float: left;
 }
 
 label::after {
@@ -11,13 +30,42 @@ label::after {
 }
 
 input[type=text] {
-  width: 50%;
-  padding: 1rem;
-  margin: 1rem;
+  width: 99%;
+  padding: .2rem;
+  margin: .2rem 0rem 1rem;
   box-sizing: border-box;
-  background-color: lightgray;
+  border: .1rem solid darkgray;
+  border-radius: .1rem;
+ }
+
+input[type=text]:focus {
+  border: 2px solid darkgray;
+  border: .1rem solid darkgray;
+  border-radius: .1rem;
 }
 
 input[type=email] {
-  background-color: lightgray;
+  width: 99%;
+  padding: .2rem;
+  margin: .2rem 0 1rem;
+  box-sizing: border-box;
+  border: .1rem solid darkgray;
+  border-radius: .1rem;
+}
+
+fieldset {
+  padding: .3rem;
+  margin: 1rem;
+  border: .1rem solid darkgray;
+  border-radius: .1rem;
+}
+
+input[type=submit]{
+  margin: 1rem;
+  background-color: royalblue;
+  color: white;
+  padding: .3rem 1rem;
+  border: none;
+  border-radius: .1rem;
+  cursor: pointer;
 }
